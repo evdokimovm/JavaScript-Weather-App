@@ -10,7 +10,11 @@ $(document).ready(function() {
 			var myLatitude = position.coords.latitude;
 			var myLongitude = position.coords.longitude;
 
+<<<<<<< HEAD
+			$('.geo').html('Latitude : ' + myLatitude + '</br>' + ' Longitude : ' + myLongitude);
+=======
 			$('.geo').html('Latitude: ' + myLatitude + '</br>' + ' Longitude: ' + myLongitude);
+>>>>>>> 0c6782dc841f7f5a6acef7997c60ecc7d0a79ef9
 
 			var d = new Date();
 
@@ -19,7 +23,11 @@ $(document).ready(function() {
 
 			$('#day').text(weekday[d.getDay()]);
 			$('#date').text(month[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear());
+<<<<<<< HEAD
+			$('#time').html('Time: ' + (d.getHours() > 12 ? (d.getHours() - 12) : d.getHours()).toString() + ":" + ((d.getMinutes() < 10 ? '0' : '').toString() + d.getMinutes().toString()) + (d.getHours() < 12 ? ' AM' : ' PM').toString());
+=======
 			$('#time').html('Current time: ' + (d.getHours() > 12 ? (d.getHours() - 12) : d.getHours()).toString() + ":" + ((d.getMinutes() < 10 ? '0' : '').toString() + d.getMinutes().toString()) + (d.getHours() < 12 ? ' AM' : ' PM').toString());
+>>>>>>> 0c6782dc841f7f5a6acef7997c60ecc7d0a79ef9
 
 			$.getJSON(openWeatherMap, {
 
